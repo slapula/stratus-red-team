@@ -17,17 +17,17 @@ builds:
 brews:
 - name: stratus-red-team
   repository:
-    owner: datadog
+    owner: slapula
     name: stratus-red-team
     branch: "homebrew-update-{{ .Version	}}"
     pull_request:
       enabled: true
       base:
-        owner: datadog
+        owner: slapula
         name: stratus-red-team
         branch: main
   directory: Formula
-  url_template: "https://github.com/DataDog/stratus-red-team/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+  url_template: "https://github.com/slapula/stratus-red-team/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
   license: Apache-2.0
   homepage: "https://stratus-red-team.cloud"
   install: |
